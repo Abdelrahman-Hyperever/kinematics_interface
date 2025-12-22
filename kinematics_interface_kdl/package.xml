@@ -32,6 +32,7 @@
 
   <test_depend>ament_cmake_gmock</test_depend>
   <export>
+    <kinematics_interface plugin="${prefix}/kinematics_interface_kdl.xml"/>
     <build_type>ament_cmake</build_type>
   </export>
 </package>

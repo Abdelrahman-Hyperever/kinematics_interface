@@ -36,6 +36,12 @@ target_link_libraries(kinematics_interface_kdl PUBLIC
 
 pluginlib_export_plugin_description_file(kinematics_interface kinematics_interface_kdl.xml)
 
+
+install(
+  FILES kinematics_interface_kdl.xml
+  DESTINATION share/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_cmake_gmock REQUIRED)
 
